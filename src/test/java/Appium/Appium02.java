@@ -22,7 +22,7 @@ public class Appium02 {
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0");
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "RealDevice");
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-        capabilities.setCapability(MobileCapabilityType.APP, "/Users/ayyildiz/IdeaProjects/AppiumTechpro/src/Apps/gestureTool.apk");
+        capabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\Administrator\\Desktop\\Appium\\Appium\\src\\Apps\\gestureTool.apk");
         capabilities.setCapability("appPackage", "com.davemac327.gesture.tool");
         capabilities.setCapability("appActivity", "com.davemac327.gesture.tool.GestureBuilderActivity");
 

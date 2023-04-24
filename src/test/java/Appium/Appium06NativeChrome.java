@@ -22,6 +22,7 @@ public class Appium06NativeChrome {
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
         capabilities.setCapability("appPackage","com.android.chrome");
         capabilities.setCapability("appActivity","org.chromium.chrome.browser.ChromeTabbedActivity");
+
         AndroidDriver<MobileElement> driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
         driver.get("https://www.amazon.com");

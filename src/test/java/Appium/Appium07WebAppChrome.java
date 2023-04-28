@@ -22,10 +22,11 @@ public class Appium07WebAppChrome {
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
         capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "chrome");
         capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT,"60000");
+
         //chrome driver versiyonunuzu burdan indirebilrisiniz
         //https://chromedriver.storage.googleapis.com/index.html
-        //sonrasinda driver in absolute path bir alt satirda tanimliyorsunuz
-        capabilities.setCapability("chromedriverExecutable","/Users/ayyildiz/IdeaProjects/AppiumTechpro/src/driver/chromedriver");
+        //sonrasinda driver in absolute path bir alt satirda tanimliyorsunuz. bu path olmadan çalışıyorsa yoruma alabiliriz.
+      //capabilities.setCapability("chromedriverExecutable","C:\\Users\\Administrator\\Desktop\\Appium\\Appium\\src\\driver\\chromedriver.exe");
         AndroidDriver<MobileElement> driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
         driver.get("https://www.amazon.com");

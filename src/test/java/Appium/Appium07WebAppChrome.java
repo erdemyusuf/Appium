@@ -32,7 +32,7 @@ public class Appium07WebAppChrome {
         driver.get("https://www.amazon.com");
 
         System.out.println(driver.getContext() + "<====app acildigindaki tur");
-        //burda aplikasyonun hangi turleri oldugunu gorem icin getContextHandles() kullaniyoruz.
+        //burda aplikasyonun hangi turleri oldugunu gormek icin getContextHandles() kullaniyoruz.
         Set<String> butunturler = driver.getContextHandles();
         for (String tur: butunturler) {
             System.out.println(tur);

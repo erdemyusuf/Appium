@@ -10,23 +10,23 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class Appium10_API_demos extends BaseClass{
+public class Appium10_API_demos extends BaseClass{  // main de oluşturduk. extends  ile clean kod amaçladık.
     @Test
     public void test() throws MalformedURLException, InterruptedException {
-       DesiredCapabilities capabilities = new DesiredCapabilities();
+ //     DesiredCapabilities capabilities = new DesiredCapabilities();
 
-       capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-       capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0");
-       capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "RealDevice");
-       capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-       capabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\Administrator\\Desktop\\Appium\\Appium\\src\\Apps\\apiDemos.apk");
+ //     capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+ //     capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0");
+ //     capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "RealDevice");
+ //     capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+ //     capabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\Administrator\\Desktop\\Appium\\Appium\\src\\Apps\\apiDemos.apk");
 ////        capabilities.setCapability("appPackage", "com.davemac327.gesture.tool");
 ////        capabilities.setCapability("appActivity", "com.davemac327.gesture.tool.GestureBuilderActivity");
-       capabilities.setCapability("noReset","true");
+  //     capabilities.setCapability("noReset","true");
 //
-       AndroidDriver<MobileElement> driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+ //      AndroidDriver<MobileElement> driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
-    //    AndroidDriver driver = getAndroidDriver();
+        AndroidDriver driver = getAndroidDriver(); // base class da oluşturduğumuz driver metodu extends  ile çağırdık
 
         System.out.println("App intstalled...");
         //api demos butonuna tikla

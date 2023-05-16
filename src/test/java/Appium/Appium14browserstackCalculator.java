@@ -15,8 +15,8 @@ public class Appium14browserstackCalculator {
         DesiredCapabilities caps = new DesiredCapabilities();
 
         // Set your access credentials
-        caps.setCapability("browserstack.user", "hello_piPqeW");
-        caps.setCapability("browserstack.key", "dJYMNfznpqzCysd6ngcX");
+        caps.setCapability("browserstack.user", "yusuferdem_7JRMbv");
+        caps.setCapability("browserstack.key", "vkChiUgtzyuxozqxSaxA");
 
         // Set URL of the application under test
         caps.setCapability("app", "bs://1469bfbdccd0741c3b28c45b337a71100f7f0772");

@@ -19,7 +19,8 @@ public class Appium14browserstackCalculator {
         caps.setCapability("browserstack.key", "vkChiUgtzyuxozqxSaxA");
 
         // Set URL of the application under test
-        caps.setCapability("app", "bs://1469bfbdccd0741c3b28c45b337a71100f7f0772");
+        caps.setCapability("app", "bs://a663a79b06b64a96deeec49bbd35fc6613bd1a7c");
+                                                    // APP YUKLEDİKTEN SONRAKİ SANAL CİHAZ ID Sİ
 
         // Specify device and os_version for testing
         caps.setCapability("device", "Google Pixel 3");
@@ -28,9 +29,9 @@ public class Appium14browserstackCalculator {
 //        caps.setCapability("appActivity","com.android.calculator2.Calculator");
 
         // Set other BrowserStack capabilities
-        caps.setCapability("project", "Kendi aplikayunumuz");
+        caps.setCapability("project", "Kendi aplikasyonumuz");
         caps.setCapability("build", "yeni ");
-        caps.setCapability("name", "hesp makinasi");
+        caps.setCapability("name", "hesap makinasi");
 
 
         // Initialise the remote Webdriver using BrowserStack remote URL
